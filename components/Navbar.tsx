@@ -1,10 +1,11 @@
 import React from "react";
+import GetMyCV from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between border-b-2 pb-2">
       <h1>LOGO</h1>
-      <button>Get My CV</button>
+      <GetMyCV>Get My CV</GetMyCV>
     </div>
   );
 };
