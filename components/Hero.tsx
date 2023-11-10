@@ -17,10 +17,10 @@ const Hero = () => {
           <span className="font-bold text-xl">.</span>
         </h1>
       </div>
-      <h1 className="text-4xl font-semibold text-slate-500">
+      <h1 className="sm:text-4xl text-2xl font-semibold text-slate-500">
         Full-Stack Web Developer
       </h1>
-      <p className="text-sm text-slate-500">
+      <p className="text-sm text-center sm:w-[100%] w-[80%]  text-slate-500">
         Imma passionate Developer. I enjoy making Websites that help people.
       </p>
     </div>
