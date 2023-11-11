@@ -6,8 +6,8 @@ const Hero = () => {
     <div className="flex flex-col h-[60vh] justify-center items-center">
       <div className="flex flex-col gap-3 mb-3">
         <Image
-          className="border rounded-full shadow-md"
-          src="/images/gamistan.png"
+          className="border rounded-full shadow-md grayscale"
+          src="/images/Zahoor_Ahmad.jpeg"
           alt="Zahoor Ahmad"
           width={200}
           height={200}
