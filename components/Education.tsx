@@ -19,16 +19,16 @@ const Education = () => {
           description="Bachelors of Study in Computer Science"
         />
         <EducationLevel
-          schoolName="UAF ── University of Agriculture Faisalabad"
-          graduationYear="2021-25"
-          major="Computer Science"
-          description="Bachelors of Study in Computer Science"
-        />
-        <EducationLevel
           schoolName="PGC ── Punjab Group of Colleges"
           graduationYear="2018-20"
           major="Computer Science"
-          description="Bachelors of Study in Computer Science"
+          description="Intermediate with Computer Science"
+        />
+        <EducationLevel
+          schoolName="PSS ── Progressive Science School, Faisalabad"
+          graduationYear="2016-1818"
+          major="Computer Science"
+          description="Matriculation in Computer Science"
         />
       </div>
     </div>
