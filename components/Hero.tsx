@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="backdrop-blur-sm flex flex-col h-[60vh] justify-center items-center">
+    <div className="backdrop-blur-sm flex flex-col h-[80vh] justify-center items-center">
       <div className="flex flex-col gap-3 mb-3">
         <Image
           className="border rounded-full shadow-sm grayscale"
@@ -13,9 +13,9 @@ const Hero = () => {
           width={200}
           height={200}
         />
-        <h1 className="font-light text-xl text-center text-slate-800">
+        <h1 className="font-bold text-xl text-center text-slate-500">
           Mr<span className="font-bold">.</span> Zahoor Ahmad
-          <span className="font-bold text-xl">.</span>
+          <span className="font-extrabold text-2xl">.</span>
         </h1>
       </div>
       <h1 className="sm:text-4xl text-2xl font-semibold text-slate-500">
