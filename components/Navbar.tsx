@@ -1,18 +1,19 @@
 import React from "react";
 import GetMyCV from "./Button";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between border-b-2 pb-2">
+    <div className="flex justify-between items-center border-b-2 pb-1">
       <Image
-        className="shadow-md rounded-full"
+        className="shadow-sm rounded-full"
         src="/images/zahoor.png"
         alt="Zahoor Ahmad"
-        width={50}
-        height={50}
+        width={36}
+        height={36}
       />
-      <GetMyCV>Get My CV</GetMyCV>
+      <Button variant="outlineZ">Get my CV</Button>
     </div>
   );
 };

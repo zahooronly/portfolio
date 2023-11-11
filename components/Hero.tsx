@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col h-[60vh] justify-center items-center">
+    <div className="backdrop-blur-sm flex flex-col h-[60vh] justify-center items-center">
       <div className="flex flex-col gap-3 mb-3">
         <Image
-          className="border rounded-full shadow-md grayscale"
-          src="/images/Zahoor_Ahmad.jpeg"
+          className="border rounded-full shadow-sm grayscale"
+          src="/images/Zahoor_Ahmad.jpg"
           alt="Zahoor Ahmad"
           width={200}
           height={200}
@@ -23,6 +24,9 @@ const Hero = () => {
       <p className="text-sm text-center sm:w-[100%] w-[80%]  text-slate-500">
         Imma passionate Developer. I enjoy making Websites that help people.
       </p>
+      <Button className="mt-3 sm:mt-5" variant="slate">
+        Hire Me ───
+      </Button>
     </div>
   );
 };
