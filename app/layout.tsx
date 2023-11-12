@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import { Inter as FontSans } from "next/font/google";
@@ -30,8 +31,15 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

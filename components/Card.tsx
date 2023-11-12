@@ -22,14 +22,15 @@ const EducationLevel = ({
   description,
 }: EducationLevelProps) => {
   return (
-    <Card className="text-slate-500">
+    <Card className="sm:max-w-[30%] max-w-[100%] sm:min-w-[30%] min-w-[100%]">
+      {/* <Card className="text-slate-500 sm:max-w-[30%] max-w-[100%] sm:min-w-[30%] min-w-[100%]"> */}
       <CardHeader>
-        <CardTitle>{schoolName}</CardTitle>
-        <CardDescription>{graduationYear}</CardDescription>
+        <CardTitle>{graduationYear}</CardTitle>
+        <CardDescription>{schoolName}</CardDescription>
       </CardHeader>
       <CardContent>
         <h3 className="font-semibold text-md">{major}</h3>
-        <p>{description}</p>
+        <p className="text-wrap">{description}</p>
       </CardContent>
       <CardFooter>
         <Button variant={"outlineZ"}>View More</Button>
