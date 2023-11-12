@@ -3,7 +3,6 @@ import GetMyCV from "./Button";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
@@ -18,7 +17,7 @@ const Navbar = () => {
         />
       </Link>
       <div>
-        <Button variant="outlineZ">Get my CV</Button>
+        <Button variant="outline">Get my CV</Button>
       </div>
     </div>
   );
