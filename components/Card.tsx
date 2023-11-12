@@ -43,7 +43,7 @@ const EducationLevel = ({
       <CardFooter>
         <Popover>
           <PopoverTrigger asChild>
-            <Button variant="outline">Read More</Button>
+            <Button variant="outline">More Info.</Button>
           </PopoverTrigger>
           <PopoverContent className="w-80 sm:ml-5 ml-1">
             <CardHeader>
