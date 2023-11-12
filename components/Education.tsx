@@ -2,10 +2,10 @@ import EducationLevel from "./Card";
 
 const Education = () => {
   return (
-    <div>
+    <div className="mb-5 sm:mb-8">
       <div className="mb-5">
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-slate-500 dark:text-slate-100">
-          Education
+          Education and Certifications.
         </h2>
         <p className="text-md text-muted-foreground">
           Here is summary of the places I studied:
@@ -52,12 +52,7 @@ const Education = () => {
           popoverGraduationYear="2016 ── 2018"
           popoverDescription="Matriculation in Computer Science. I have completed my Matriculation with Computer Science. I have studied Physics, Mathematics, Chemistry and Computer Science. GW Basic is the most important thing that I've learnt in my school. I got 88.09% in my SSC."
         />
-        {/* <EducationLevel
-          schoolName="DS ── Digiskills."
-          graduationYear="2019 ── 4 Months"
-          major="WordPress"
-          description="Content Management System (CMS)."
-        /> */}
+
         <EducationLevel
           schoolName="SMIT ── Saylani Mass IT Training."
           graduationYear="2022 ── 23"
@@ -68,7 +63,28 @@ const Education = () => {
           popoverGraduationYear="2022 ── 23"
           popoverDescription="Web Development with MERN Stack (MongoDB, Express, React, Node) and React Native for Mobile Development. T3 Stack (Typescript, TailwindCSS, and NextJS 13) for Web Development."
         />
+        <EducationLevel
+          schoolName="DS ── Digiskills."
+          graduationYear="2019 ── 4 Months"
+          major="WordPress"
+          description="Content Management System (CMS)."
+          popoverTitle="DS ── Digiskills."
+          popoverMajor="WordPress"
+          popoverGraduationYear="2019 ── 4 Months"
+          popoverDescription="I have completed my WordPress course from Digiskills. I have learnt about WordPress and how to create a website using WordPress. I have also learnt about Search Engine Optimization (SEO) and how to rank a website on Google."
+        />
+        {/* <EducationLevel
+          schoolName="DS ── Digiskills."
+          graduationYear="2019 ── 4 Months"
+          major="Freelancing"
+          description="Freelancing as a Career."
+          popoverTitle="DS ── Digiskills."
+          popoverMajor="FreeLancing"
+          popoverGraduationYear="2019 ── 4 Months"
+          popoverDescription="I have completed my Freelancing course from Digiskills. I have also learnt about Fiverr, Upwork, and other Freelancing platforms."
+        /> */}
       </div>
+      <hr className="mt-3 sm:mt-5 border-2 rounded-xl w-2/4 mx-auto"/>
     </div>
   );
 };
