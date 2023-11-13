@@ -31,7 +31,7 @@ const EducationLevel = ({
   popoverDescription,
 }: EducationLevelProps) => {
   return (
-    <Card className="sm:max-w-[30%] text-slate-500 dark:text-slate-100 max-w-[100%] sm:min-w-[30%] min-w-[100%]">
+    <Card className="ml-2 sm:ml-0 sm:max-w-[30%] text-slate-500 dark:text-slate-100 max-w-[100%] sm:min-w-[30%] min-w-[100%]">
       <CardHeader>
         <CardTitle>{graduationYear}</CardTitle>
         <CardDescription>{schoolName}</CardDescription>
