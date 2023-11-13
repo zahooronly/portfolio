@@ -1,4 +1,5 @@
 import EducationLevel from "./Card";
+import EndLine from "./EndLine";
 
 const Education = () => {
   return (
@@ -11,7 +12,7 @@ const Education = () => {
           Here is summary of the places I studied:
         </p>
       </div>
-      <div className="flex flex-wrap gap-5 items-center justify-center">
+      <div className="border-l-4 rounded-sm flex flex-wrap gap-5 items-center justify-center">
         <EducationLevel
           schoolName="UAF ── University of Agriculture Faisalabad"
           graduationYear="2021 ── Present"
@@ -84,7 +85,6 @@ const Education = () => {
           popoverDescription="I have completed my Freelancing course from Digiskills. I have also learnt about Fiverr, Upwork, and other Freelancing platforms."
         /> */}
       </div>
-      <hr className="mt-3 sm:mt-5 border-2 rounded-xl w-2/4 mx-auto"/>
     </div>
   );
 };
