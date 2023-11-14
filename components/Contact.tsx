@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -29,6 +30,7 @@ const formSchema = z.object({
 });
 
 const Contact = () => {
+  const formData = useRef();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,7 +48,7 @@ const Contact = () => {
       <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-slate-500 dark:text-slate-100">
         Message Me.
       </h2>
-      <div className="mt-3 sm:max-w-[50%] md:max-w-[75%] mx-auto max-w-full border-l-4 rounded-lg p-6">
+      <div className="mt-3 sm:max-w-[65%] max-w-full mx-auto  border-l-4 rounded-lg p-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField

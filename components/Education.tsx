@@ -6,7 +6,7 @@ const Education = () => {
     <div className="mb-5 sm:mb-8">
       <div className="mb-5">
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-slate-500 dark:text-slate-100">
-          Education and Certifications.
+          Education and Certifications
         </h2>
         <p className="text-md text-muted-foreground">
           Here is summary of the places I studied:

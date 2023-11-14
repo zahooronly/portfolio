@@ -1,0 +1,5 @@
+{
+	"nodejs.typescript.rebuildOnChanges": false,
+	"nodejs.editor.formatOnSave.prettier.mode": "Enabled",
+	"run.destination.stop.already.running": "Ask"
+}
