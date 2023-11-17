@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
+import emailjs from "@emailjs/browser";
 import {
   Form,
   FormControl,
@@ -30,7 +31,31 @@ const formSchema = z.object({
 });
 
 const Contact = () => {
-  const formData = useRef();
+  const formData = useRef<HTMLFormElement | null>(null);
+  const sendEmail = (values: z.infer<typeof formSchema>) => {
+    // formData.current = values;
+
+    if (formData.current) {
+      emailjs
+        .sendForm(
+          "process.env.EMAIL_JS_SERVICE_ID",
+          "process.env.EMAIL_JS_TEMPLATE_ID",
+          formData.current,
+          "process.env.MY_PUBLIC_KEY"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log(formData);
+          },
+          (error) => {
+            console.log(error.text);
+            console.log(formData.current);
+          }
+        );
+    }
+  };
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,9 +65,9 @@ const Contact = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-  }
+  // function onSubmit(values: z.infer<typeof formSchema>) {
+  //   console.log(values);
+  // }
   return (
     <div className="">
       <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-slate-500 dark:text-slate-100">
@@ -50,7 +75,11 @@ const Contact = () => {
       </h2>
       <div className="mt-3 sm:max-w-[65%] max-w-full mx-auto  border-l-4 rounded-lg p-6">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form
+            ref={formData}
+            onSubmit={form.handleSubmit(sendEmail)}
+            className="space-y-8"
+          >
             <FormField
               control={form.control}
               name="username"
@@ -72,7 +101,7 @@ const Contact = () => {
                 <FormItem>
                   <FormLabel className="dark:text-slate-100">Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="your_name@domain.com" {...field} />
+                    <Input placeholder="yourname@domain.com" {...field} />
                   </FormControl>
                   <FormDescription>
                     Your complete email address.
