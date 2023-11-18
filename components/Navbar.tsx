@@ -1,7 +1,7 @@
 import React from "react";
 import GetMyCV from "./Button";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Navbar = () => {

@@ -1,3 +1,4 @@
+import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import EndLine from "@/components/EndLine";
@@ -12,6 +13,8 @@ export default function Home() {
       <Hero />
       <EndLine />
       <Education />
+      <EndLine />
+      <Certifications />
       <EndLine />
       <Contact />
       <EndLine />
