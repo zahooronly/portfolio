@@ -33,15 +33,13 @@ const formSchema = z.object({
 const Contact = () => {
   const formData = useRef<HTMLFormElement | null>(null);
   const sendEmail = (values: z.infer<typeof formSchema>) => {
-    // formData.current = values;
-
     if (formData.current) {
       emailjs
         .sendForm(
-          "process.env.EMAIL_JS_SERVICE_ID",
-          "process.env.EMAIL_JS_TEMPLATE_ID",
+          "service_6cr0enb",
+          "template_ftf5n3g",
           formData.current,
-          "process.env.MY_PUBLIC_KEY"
+          "pD6TZSVafFfd7QPXA"
         )
         .then(
           (result) => {
@@ -65,9 +63,6 @@ const Contact = () => {
     },
   });
 
-  // function onSubmit(values: z.infer<typeof formSchema>) {
-  //   console.log(values);
-  // }
   return (
     <div className="">
       <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-slate-500 dark:text-slate-100">
