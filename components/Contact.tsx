@@ -44,11 +44,11 @@ const Contact = () => {
         .then(
           (result) => {
             console.log(result.text);
-            console.log(formData);
+            console.log(values);
           },
           (error) => {
             console.log(error.text);
-            console.log(formData.current);
+            console.log(values);
           }
         );
     }
