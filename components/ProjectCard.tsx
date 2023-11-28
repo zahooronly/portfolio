@@ -47,7 +47,7 @@ const ProjectCard = ({
           </CardContent>
         </Card>
       </HoverCardTrigger>
-      <HoverCardContent className="w-[50vw] h-[50vh] flex justify-center items-center">
+      <HoverCardContent className="w-[20vw] h-[90vh] flex justify-center items-center">
         <iframe src={projectLink} className="w-[100%] h-[100%]"></iframe>
       </HoverCardContent>
     </HoverCard>
