@@ -31,7 +31,9 @@ const ProjectCard = ({
       <HoverCardTrigger>
         <Card>
           <CardHeader>{projectName}</CardHeader>
-          <CardDescription>{projectDescription}</CardDescription>
+          <CardDescription className="px-5">
+            {projectDescription}
+          </CardDescription>
           <CardContent>
             <Link href={projectLink} target="_blank">
               <Image
@@ -40,11 +42,12 @@ const ProjectCard = ({
                 width={500}
                 height={300}
               />
+              {/* <iframe src={projectLink} className=""></iframe> */}
             </Link>
           </CardContent>
         </Card>
       </HoverCardTrigger>
-      <HoverCardContent className="w-[90vw] h-[90vh] flex justify-center items-center">
+      <HoverCardContent className="w-[50vw] h-[50vh] flex justify-center items-center">
         <iframe src={projectLink} className="w-[100%] h-[100%]"></iframe>
       </HoverCardContent>
     </HoverCard>
