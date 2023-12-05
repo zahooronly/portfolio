@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Head from "next/head";
+// import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -21,10 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Head>
+    <html lang="en">
+      {/* <Head>
         <link rel="icon" href="./favicon.ico" />
-      </Head>
+      </Head> */}
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased sm:py-6  py-3 px-4 sm:px-10",

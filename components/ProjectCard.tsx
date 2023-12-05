@@ -36,13 +36,13 @@ const ProjectCard = ({
           </CardDescription>
           <CardContent>
             <Link href={projectLink} target="_blank">
-              <Image
+              {/* <Image
                 src={projectImage}
                 alt={projectName}
                 width={500}
                 height={300}
-              />
-              {/* <iframe src={projectLink} className=""></iframe> */}
+              /> */}
+              <iframe src={projectLink} className=""></iframe>
             </Link>
           </CardContent>
         </Card>
