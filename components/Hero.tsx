@@ -27,7 +27,7 @@ const Hero = () => {
       </p>
       <Link
         target="_blank"
-        href="https://wa.me/923038639099?text=I%20checked%20your%20portfolio"
+        href="https://wa.me/923447269662?text=I%20checked%20your%20portfolio"
       >
         <Button className="mt-3 sm:mt-5" variant="secondary">
           Hire Me ───
